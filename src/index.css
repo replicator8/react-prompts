@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Play:wght@400;700&display=swap");
+
+section ul {
+  list-style: none;
+}
+
+section ul li {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+section ul li:hover {
+  background-color: buttonFace;
+}
+
+.control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.create {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0.5rem 1rem;
+  width: 40vw;
+  border: 3px dashed #310062;
+  border-radius: 6px;
+  height: 100vh;
+  margin: 2rem 2rem;
+}
+
+.active {
+  width: 70vw;
+  border: 3px dashed #310062;
+  border-radius: 6px;
+  height: 100vh;
+  margin: 2rem 2rem;
+  overflow-y: auto;
+}
+
+.archive {
+  width: 70vw;
+  border: 3px dashed #310062;
+  border-radius: 6px;
+  height: 100vh;
+  margin: 2rem 2rem;
+  overflow-y: auto;
+}
+
+textarea {
+  resize: vertical;
+  max-height: 150px;
+  min-height: 34px;
+}
+
+.foo {
+  font-size: 16px;
+  font-family: 'Play', sans-serif;
+}

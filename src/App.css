@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Play', sans-serif;
+  background-color: #f0f8ff;
+}
+
+main {
+  display: flex;
+  gap: 10px;
+}
