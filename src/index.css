@@ -63,5 +63,40 @@ textarea {
 
 .foo {
   font-size: 16px;
-  font-family: 'Play', sans-serif;
+  font-family: "Play", sans-serif;
 }
+
+/* Smartphones */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .modal-actions {
+    display: flex;
+  }
+
+  .create,
+  .active,
+  .archive {
+    margin: 2rem 0.5rem;
+  }
+
+  .prompt-btn {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  main {
+    gap: 0px;
+  }
+
+  .tabs-btn {
+    display: flex;
+  }
+}
+
+/* iPad */
+
+/* Monitor >= 1200 */

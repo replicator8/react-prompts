@@ -2,7 +2,7 @@ import Button from "../Button/Button";
 
 export default function TabsSection({ active, onChange }) {
   return (
-    <section style={{marginTop: '1rem', marginLeft: '2rem'}}>
+    <section style={{marginTop: '1rem', marginLeft: '2rem'}} className="tabs-btn">
       <Button
         isActive={active === "active"}
         onClick={() => onChange("active")}

@@ -86,7 +86,7 @@ export default function ArchivePrompts() {
               <Button onClick={() => setModal(null)}>Закрыть</Button>
               <Button
                 onClick={() => handleActivatePrompt(modal.id)}
-                style={{ backgroundColor: "#310062", color: '#fff' }}
+                style={{ backgroundColor: "#310062", color: "#fff" }}
               >
                 Восстановить
               </Button>
