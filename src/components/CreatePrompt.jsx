@@ -34,7 +34,7 @@ export default function CreatePrompt() {
 
   return (
     <section className="create">
-      <h1>Создать промпт</h1>
+      <h1 style={{textAlign: "center"}}>Создать промпт</h1>
       <form>
         <label htmlFor="title" style={{ marginBottom: "1rem" }}>
           Введите название промпта

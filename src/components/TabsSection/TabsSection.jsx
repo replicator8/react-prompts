@@ -6,14 +6,23 @@ export default function TabsSection({ active, onChange }) {
       <Button
         isActive={active === "active"}
         onClick={() => onChange("active")}
+        className="btn-act"
       >
         Активные
       </Button>
       <Button
         isActive={active === "archive"}
         onClick={() => onChange("archive")}
+        className="btn-arc"
       >
         Архивные
+      </Button>
+      <Button
+        isActive={active === "all"}
+        onClick={() => onChange("all")}
+        className="btn-all"
+      >
+        Все
       </Button>
     </section>
   );

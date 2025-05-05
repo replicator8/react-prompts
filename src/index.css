@@ -4,6 +4,16 @@ section ul {
   list-style: none;
 }
 
+.first {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f8ff;
+}
+
+.btn-all {
+  display: none;
+}
+
 section ul li {
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -30,27 +40,24 @@ section ul li:hover {
   flex-direction: column;
   gap: 20px;
   padding: 0.5rem 1rem;
-  width: 40vw;
   border: 3px dashed #310062;
   border-radius: 6px;
-  height: 100vh;
+  height: 100%;
   margin: 2rem 2rem;
 }
 
 .active {
-  width: 70vw;
   border: 3px dashed #310062;
   border-radius: 6px;
-  height: 100vh;
+  height: 100%;
   margin: 2rem 2rem;
   overflow-y: auto;
 }
 
 .archive {
-  width: 70vw;
   border: 3px dashed #310062;
   border-radius: 6px;
-  height: 100vh;
+  height: 100%;
   margin: 2rem 2rem;
   overflow-y: auto;
 }
@@ -67,7 +74,11 @@ textarea {
 }
 
 /* Smartphones */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+  .btn-all {
+    display: none;
+  }
+
   h1 {
     font-size: 20px;
   }
@@ -79,7 +90,7 @@ textarea {
   .create,
   .active,
   .archive {
-    margin: 2rem 0.5rem;
+    margin: 1rem 2rem;
   }
 
   .prompt-btn {
@@ -89,14 +100,44 @@ textarea {
   }
 
   main {
-    gap: 0px;
+    flex-direction: column-reverse;
+    gap: 5px;
   }
 
   .tabs-btn {
     display: flex;
+    margin: 1rem 1rem;
+    background-color: #f0f8ff;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .first {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
   }
 }
 
-/* iPad */
-
 /* Monitor >= 1200 */
+
+@media screen and (min-width: 1200px) {
+  .archive,
+  .active,
+  .create {
+    width: 30vw;
+  }
+
+  .btn-all {
+    display: inline;
+    margin-left: 0.5rem;
+  }
+
+  .btn-act,
+  .btn-arc {
+    display: none;
+  }
+}

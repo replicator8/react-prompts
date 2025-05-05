@@ -96,6 +96,7 @@ export default function ActivePrompts() {
       )}
 
       <section className="active">
+        {<h1 style={{textAlign: "center", marginTop: "1rem"}}>Активные промпты</h1>}
         {!loading && (
           <ul>
             {prompts

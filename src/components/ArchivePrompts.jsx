@@ -96,6 +96,7 @@ export default function ArchivePrompts() {
       )}
 
       <section className="archive">
+      {<h1 style={{textAlign: "center", marginTop: "1rem"}}>Архивные промпты</h1>}
         {!loading && (
           <ul>
             {prompts

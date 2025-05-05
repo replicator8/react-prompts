@@ -7,15 +7,24 @@ import ArchivePrompts from "./components/ArchivePrompts";
 import CreatePrompt from "./components/CreatePrompt";
 
 export default function App() {
-  const [tab, setTab] = useState("active");
+  const tabNow = window.innerWidth >= 1200 ? "all" : "active";
+  const [tab, setTab] = useState(tabNow);
 
   return (
     <>
-      <Header />
-      <TabsSection active={tab} onChange={(current) => setTab(current)} />
+      <div className="first">
+        <Header />
+        <TabsSection active={tab} onChange={(current) => setTab(current)} />
+      </div>
       <main>
         {tab === "active" && <ActivePrompts />}
         {tab === "archive" && <ArchivePrompts />}
+        {tab === "all" && (
+          <>
+            <ActivePrompts />
+            <ArchivePrompts />
+          </>
+        )}
 
         <CreatePrompt />
       </main>
